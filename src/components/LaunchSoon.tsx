@@ -7,7 +7,7 @@ export default function LaunchSoon() {
       <div className="mx-auto max-w-md text-center">
         <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl">uibase</h1>
         <p className="mt-4 text-muted-foreground">
-          base template for UI projects
+          Tony Ghouse portfolio
         </p>
         <div className="mt-6 space-y-4">
           <form className="flex gap-2">

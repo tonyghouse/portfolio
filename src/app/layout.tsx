@@ -11,7 +11,7 @@ const fontSans = FontSans({
 })
 
 export const metadata: Metadata = {
-  title: "UI Base Template",
+  title: "Tony Ghouse",
   description: "",
 };
 
