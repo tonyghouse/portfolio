@@ -121,21 +121,21 @@ function Projects() {
       ],
       tags: ["Java", "Spring", "Postgres", "Kafka", "ReactJs / NextJs"],
     },
-    // {
-    //   title: "DBCrafter - Db Utility tools",
-    //   description: "Util tools for your db",
-    //   links: [
-    //     {
-    //       icon: <FaGithub />,
-    //       url: "https://github.com/tonyghouse/dbcrafter-ui",
-    //     },
-    //     {
-    //       icon: <FaExternalLinkAlt />,
-    //       url: "https://dbcrafter.tonyghouse.com",
-    //     },
-    //   ],
-    //   tags: ["Javascript", "ReactJs / NextJs"],
-    // },
+    {
+      title: "QueryCraft - Db Utility tools",
+      description: "Util tools for your db",
+      links: [
+        {
+          icon: <FaGithub />,
+          url: "https://github.com/tonyghouse/querycraft-ui",
+        },
+        {
+          icon: <FaExternalLinkAlt />,
+          url: "https://querycraft.tonyghouse.com",
+        },
+      ],
+      tags: ["Javascript", "ReactJs / NextJs"],
+    },
   ];
 
   return (
