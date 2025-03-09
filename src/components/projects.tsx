@@ -105,7 +105,6 @@ function Projects() {
       ],
       tags: ["Java", "Spring", "Postgres", "Kafka", "ReactJs / NextJs"],
     },
-
     {
       title: "RollbackRanger - Roolback the data modified by API",
       description: "Tool to rollback the data modified by API",

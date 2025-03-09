@@ -5,8 +5,8 @@ import React, { useState } from "react";
 function Experience() {
   const experienceRecord:any = {
 
-    "Software Developer": {
-      position: "Software Developer",
+    "Software Developer (SDE-2)": {
+      position: "Software Developer (SDE-2)",
       organisation: "Symphony AI",
       url: "https://www.symphonyai.com/",
       duration: "Nov 2023 -  Present",
@@ -23,8 +23,8 @@ function Experience() {
       ],
     },
     
-    "Senior Software Engineer": {
-      position: "Senior Software Engineer",
+    "Senior Software Engineer (SDE-2)": {
+      position: "Senior Software Engineer (SDE-2)",
       organisation: "LTI Mindtree",
       url: "https://www.ltimindtree.com/",
       duration: "Jan 2023 - Seps 2023",
@@ -37,8 +37,8 @@ function Experience() {
         "Deployed dockerized applications in containerized environments using Bitbucket piplines and AWS Elastic Kubernetes for efficient scaling and orchestration"
       ],
     },
-    "Software Engineer": {
-      position: "Software Engineer",
+    "Software Engineer (SDE-1)": {
+      position: "Software Engineer (SDE-1)",
       organisation: "LTI Mindtree",
       url: "https://www.ltimindtree.com/",
       duration: "March 2021 - Dec 2022",
