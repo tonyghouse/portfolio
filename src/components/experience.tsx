@@ -9,7 +9,7 @@ function Experience() {
       position: "Software Developer (SDE-2)",
       organisation: "Symphony AI",
       url: "https://www.symphonyai.com/",
-      duration: "Nov 2023 -  Present",
+      duration: "Nov 2023 -  Oct 2025",
       content: [
         "Utilized AI Search on vectorized data coupled with LLM to carry out essential data matching operations",
         "Developed event-driven architectures using Azure Service bus to ensure real-time data processing",
@@ -27,7 +27,7 @@ function Experience() {
       position: "Senior Software Engineer (SDE-2)",
       organisation: "LTI Mindtree",
       url: "https://www.ltimindtree.com/",
-      duration: "Jan 2023 - Seps 2023",
+      duration: "Jan 2023 - Sept 2023",
       content: [
         "Designed and implemented primary workflow of application which reduced the development time",
         "Developed an ETL job with reduction of 10X in execution time and consumption of less CPU and Memory resources",
@@ -66,7 +66,7 @@ function Experience() {
           </span>
         </div>
         <p className="w-full mb-3 leading-7 slate font-inter ">
-          As of 2025, I have 4 years of professional developer experience in building backend applications.
+          As of 2025, I have 4.5 years of professional developer experience in building backend applications.
            Along side worked and contributed to prominent open-source projects.
         </p>
       

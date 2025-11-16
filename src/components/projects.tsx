@@ -30,23 +30,23 @@ function Projects() {
       imageLight: socialRavenLightBanner,
       imageDark: socialRavenDarkBanner,
     },
-    {
-      name: "MailCrafter - Craft mails that look awesome",
-      description: "Craft mails with awesome UI. Never write boring emails",
-      tags: ["SpringBoot", "ReactJs / NextJs", "Postgres"],
-      links: [
-        {
-          icon: <FaGithub />,
-          url: "https://github.com/tonyghouse/mailcrafter-ui",
-        },
-        {
-          icon: <FaExternalLinkAlt />,
-          url: "https://mailcrafter.tonyghouse.com",
-        },
-      ],
-      imageLight: blankLightBanner,
-      imageDark: blankLightBanner,
-    },
+    // {
+    //   name: "MailCrafter - Craft mails that look awesome",
+    //   description: "Craft mails with awesome UI. Never write boring emails",
+    //   tags: ["SpringBoot", "ReactJs / NextJs", "Postgres"],
+    //   links: [
+    //     {
+    //       icon: <FaGithub />,
+    //       url: "https://github.com/tonyghouse/mailcrafter-ui",
+    //     },
+    //     {
+    //       icon: <FaExternalLinkAlt />,
+    //       url: "https://mailcrafter.tonyghouse.com",
+    //     },
+    //   ],
+    //   imageLight: blankLightBanner,
+    //   imageDark: blankLightBanner,
+    // },
     {
       name: "ConvoMail - Streamline Your Inbox, Amplify Your Chat",
       description:
@@ -105,21 +105,21 @@ function Projects() {
       ],
       tags: ["Java", "Spring", "Postgres", "Kafka", "ReactJs / NextJs"],
     },
-    {
-      title: "RollbackRanger - Roolback the data modified by API",
-      description: "Tool to rollback the data modified by API",
-      links: [
-        {
-          icon: <FaGithub />,
-          url: "https://github.com/tonyghouse/rollbackranger-ui",
-        },
-        {
-          icon: <FaExternalLinkAlt />,
-          url: "https://rollbackranger.tonyghouse.com",
-        },
-      ],
-      tags: ["Java", "Spring", "Postgres", "Kafka", "ReactJs / NextJs"],
-    },
+    // {
+    //   title: "RollbackRanger - Roolback the data modified by API",
+    //   description: "Tool to rollback the data modified by API",
+    //   links: [
+    //     {
+    //       icon: <FaGithub />,
+    //       url: "https://github.com/tonyghouse/rollbackranger-ui",
+    //     },
+    //     {
+    //       icon: <FaExternalLinkAlt />,
+    //       url: "https://rollbackranger.tonyghouse.com",
+    //     },
+    //   ],
+    //   tags: ["Java", "Spring", "Postgres", "Kafka", "ReactJs / NextJs"],
+    // },
     {
       title: "QueryCraft - Db Utility tools",
       description: "Util tools for your db",
