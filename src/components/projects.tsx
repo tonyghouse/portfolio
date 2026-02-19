@@ -30,48 +30,47 @@ function Projects() {
       imageLight: socialRavenLightBanner,
       imageDark: socialRavenDarkBanner,
     },
-    // {
-    //   name: "MailCrafter - Craft mails that look awesome",
-    //   description: "Craft mails with awesome UI. Never write boring emails",
-    //   tags: ["SpringBoot", "ReactJs / NextJs", "Postgres"],
-    //   links: [
-    //     {
-    //       icon: <FaGithub />,
-    //       url: "https://github.com/tonyghouse/mailcrafter-ui",
-    //     },
-    //     {
-    //       icon: <FaExternalLinkAlt />,
-    //       url: "https://mailcrafter.tonyghouse.com",
-    //     },
-    //   ],
-    //   imageLight: blankLightBanner,
-    //   imageDark: blankLightBanner,
-    // },
     {
-      name: "ConvoMail - Streamline Your Inbox, Amplify Your Chat",
-      description:
-        "ConvoMail transforms your email experience by blending the efficiency of chat with the professionalism of traditional emailing.",
-      tags: [
-        "SpringBoot",
-        "ReactJs / NextJs",
-        "Postgres",
-        "MeiliSearch",
-        "Redis",
-      ],
-
+      name: "Mailzard - Marketing and Transactional Emails, Simplified",
+      description: "Email automation platform that lets users create campaigns, design templates, schedule sends, manage subscribers, and track analytics.",
+      tags: ["SpringBoot", "ReactJs / NextJs", "Postgres"],
       links: [
         {
           icon: <FaGithub />,
-          url: "https://github.com/tonyghouse/convomail-ui",
+          url: "https://github.com/tonyghouse/mailzard-ui",
         },
         {
           icon: <FaExternalLinkAlt />,
-          url: "https://convomail.tonyghouse.com",
+          url: "https://mailzard.tonyghouse.com",
         },
       ],
       imageLight: blankLightBanner,
       imageDark: blankLightBanner,
     },
+    // {
+    //   name: "ConvoMail - Streamline Your Inbox, Amplify Your Chat",
+    //   description:
+    //     "ConvoMail transforms your email experience by blending the efficiency of chat with the professionalism of traditional emailing.",
+    //   tags: [
+    //     "SpringBoot",
+    //     "ReactJs / NextJs",
+    //     "Postgres",
+    //     "MeiliSearch",
+    //     "Redis",
+    //   ],
+    //   links: [
+    //     {
+    //       icon: <FaGithub />,
+    //       url: "https://github.com/tonyghouse/convomail-ui",
+    //     },
+    //     {
+    //       icon: <FaExternalLinkAlt />,
+    //       url: "https://convomail.tonyghouse.com",
+    //     },
+    //   ],
+    //   imageLight: blankLightBanner,
+    //   imageDark: blankLightBanner,
+    // },
   ];
 
   const otherProjectList = [
