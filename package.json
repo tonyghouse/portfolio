@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "mkdir -p dist && cp -R site/. dist/ && tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
-    "dev": "npm run build && wrangler pages dev dist"
+    "dev": "npm run build && wrangler dev"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.3",
