@@ -80,6 +80,7 @@
     currentHeader.replaceWith(nextHeader);
     currentMain.replaceWith(nextMain);
     updateMetadata(nextDocument);
+    window.dispatchEvent(new Event("site:navigation"));
   };
 
   const focusPage = () => {

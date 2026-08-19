@@ -1,2 +1,60 @@
 @import "tailwindcss" source(none);
 @source "../site";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+:root {
+  color-scheme: light;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #e11d48;
+  color: #fff;
+}
+
+.brand-mark {
+  display: inline-block;
+  flex: none;
+  background-color: currentColor;
+  mask: url("/brand-mark.svg") center / contain no-repeat;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(to right, rgb(120 113 108 / 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(120 113 108 / 0.12) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: linear-gradient(to bottom, transparent, black 18%, black 82%, transparent);
+}
+
+.dark .hero-grid {
+  background-image:
+    linear-gradient(to right, rgb(168 162 158 / 0.09) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(168 162 158 / 0.09) 1px, transparent 1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
