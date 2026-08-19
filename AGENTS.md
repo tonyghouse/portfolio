@@ -18,6 +18,8 @@
 - `site/`: Static HTML source.
 - `site/<route>/index.html`: Page-level routes.
 - `site/blog/`: Blog pages.
+- `site/router.js`: Progressive client-side navigation for internal links.
+- `site/favicon.svg`: Shared site favicon.
 - `src/styles.css`: Tailwind entry stylesheet and source registration.
 - `worker/index.js`: Worker request handling and hostname routing.
 - `wrangler.jsonc`: Cloudflare Worker and static-assets configuration.
@@ -47,6 +49,8 @@ npm run build
 - Add a page as `site/<route>/index.html` so it receives a clean trailing-slash URL.
 - Use Tailwind utility classes for styling and keep `src/styles.css` as the build entrypoint.
 - Keep the navbar and shared visual structure consistent across all HTML pages.
+- Include the shared router and favicon in every page document.
+- Keep every route usable as a direct request when JavaScript is unavailable.
 - Preserve the `ASSETS` binding and blog hostname behavior when changing Worker routing.
 - Do not edit generated files in `dist/` or local state in `.wrangler/`.
 - Run `npm run build` after changing HTML, Tailwind classes, styles, or Worker configuration.
