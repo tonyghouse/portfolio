@@ -6,6 +6,6 @@
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
-    "run_worker_first": ["/"]
+    "run_worker_first": ["/", "/projects", "/projects/", "/experience", "/experience/", "/about", "/about/"]
   }
 }

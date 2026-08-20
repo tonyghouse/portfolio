@@ -14,6 +14,53 @@
 
 :root.dark {
   color-scheme: dark;
+
+  --dark-canvas: #202226;
+  --dark-surface: #292b30;
+  --dark-contact: #25272c;
+}
+
+/* Soften dark mode without changing any light-mode surface colors. */
+.dark.dark\:bg-stone-950,
+.dark .dark\:bg-stone-950 {
+  background-color: var(--dark-canvas);
+}
+
+.dark.dark\:bg-stone-950\/90,
+.dark .dark\:bg-stone-950\/90 {
+  background-color: rgb(32 34 38 / 0.9);
+}
+
+.dark .dark\:bg-stone-950\/35 {
+  background-color: rgb(32 34 38 / 0.35);
+}
+
+.dark .dark\:bg-stone-900 {
+  background-color: var(--dark-surface);
+}
+
+.dark .dark\:bg-stone-900\/80 {
+  background-color: rgb(41 43 48 / 0.8);
+}
+
+.dark .dark\:bg-stone-900\/70 {
+  background-color: rgb(41 43 48 / 0.7);
+}
+
+.dark .dark\:bg-stone-900\/60 {
+  background-color: rgb(41 43 48 / 0.6);
+}
+
+.dark .dark\:bg-stone-900\/50 {
+  background-color: rgb(41 43 48 / 0.5);
+}
+
+.dark .dark\:bg-stone-900\/30 {
+  background-color: rgb(41 43 48 / 0.3);
+}
+
+.dark .dark\:bg-black {
+  background-color: var(--dark-contact);
 }
 
 html {

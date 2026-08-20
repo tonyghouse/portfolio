@@ -4,6 +4,48 @@
   let navigationId = 0;
   let scrollFrame;
 
+  const getCurrentTenureMonths = (start) => {
+    const [startYear, startMonth] = start.split("-").map(Number);
+    const now = new Date();
+
+    return Math.max(
+      0,
+      (now.getFullYear() - startYear) * 12 + now.getMonth() - (startMonth - 1) + 1,
+    );
+  };
+
+  const formatTenure = (months) => {
+    const years = Math.floor(months / 12);
+    const remainingMonths = months % 12;
+    const parts = [];
+
+    if (years) {
+      parts.push(`${years} ${years === 1 ? "year" : "years"}`);
+    }
+
+    if (remainingMonths) {
+      parts.push(`${remainingMonths} ${remainingMonths === 1 ? "month" : "months"}`);
+    }
+
+    return parts.join(" ") || "Less than a month";
+  };
+
+  const updateTenures = () => {
+    document.querySelectorAll("[data-tenure-start]").forEach((element) => {
+      element.textContent = formatTenure(getCurrentTenureMonths(element.dataset.tenureStart));
+    });
+
+    document.querySelectorAll("[data-total-experience-base-months]").forEach((element) => {
+      const fixedExperienceMonths = Number(element.dataset.totalExperienceBaseMonths);
+      const currentTenureMonths = getCurrentTenureMonths(element.dataset.currentTenureStart);
+
+      element.textContent = formatTenure(fixedExperienceMonths + currentTenureMonths);
+    });
+  };
+
+  updateTenures();
+  window.addEventListener("site:navigation", updateTenures);
+
   const getInternalUrl = (link) => {
     if (
       (link.target && link.target !== "_self") ||

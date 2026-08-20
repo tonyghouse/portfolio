@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Mailzard is an email automation platform built by Tony Ghouse." />
+    <meta name="theme-color" content="#f7f5f2" />
+    <title>Mailzard — Tony Ghouse</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script>
+      try {
+        document.documentElement.classList.toggle("dark", localStorage.getItem("tonyghouse-theme") === "dark");
+      } catch {}
+    </script>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/theme.js" defer></script>
+    <script src="/router.js" defer></script>
+  </head>
+  <body class="min-h-screen overflow-x-hidden bg-[#f7f5f2] font-sans text-stone-950 antialiased transition-colors duration-300 dark:bg-stone-950 dark:text-stone-100">
+    <header class="sticky top-0 z-50 border-b border-stone-200/80 bg-[#f7f5f2]/90 backdrop-blur-xl dark:border-stone-800 dark:bg-stone-950/90">
+      <div class="mx-auto flex min-h-18 max-w-6xl items-center gap-3 px-4 sm:px-6">
+        <a class="group mr-auto flex shrink-0 items-center gap-3 font-semibold tracking-tight" href="/" aria-label="Tony Ghouse home"><span class="brand-mark h-9 w-9 text-stone-950 transition-transform duration-300 group-hover:-rotate-6 dark:text-stone-100" aria-hidden="true"></span><span class="hidden sm:inline">Tony Ghouse</span></a>
+        <nav class="overflow-x-auto" aria-label="Main navigation"><ul class="flex w-max items-center gap-0.5 text-xs font-medium text-stone-600 sm:gap-1 sm:text-sm dark:text-stone-400"><li><a class="rounded-full px-2.5 py-2 transition hover:bg-stone-200/70 hover:text-stone-950 sm:px-3 dark:hover:bg-stone-800 dark:hover:text-stone-100" href="/#skills">Skills</a></li><li><a class="rounded-full px-2.5 py-2 transition hover:bg-stone-200/70 hover:text-stone-950 sm:px-3 dark:hover:bg-stone-800 dark:hover:text-stone-100" href="/#experience">Experience</a></li><li><a class="rounded-full bg-stone-200/70 px-2.5 py-2 text-stone-950 sm:px-3 dark:bg-stone-800 dark:text-stone-100" href="/#projects" aria-current="page">Projects</a></li><li><a class="rounded-full px-2.5 py-2 transition hover:bg-stone-200/70 hover:text-stone-950 sm:px-3 dark:hover:bg-stone-800 dark:hover:text-stone-100" href="/blog/">Blog</a></li></ul></nav>
+        <button class="grid h-9 w-9 shrink-0 cursor-pointer place-items-center rounded-full border border-stone-300 bg-white/70 text-stone-700 transition hover:border-rose-400 hover:text-rose-600 sm:h-10 sm:w-10 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-300 dark:hover:border-rose-500 dark:hover:text-rose-400" type="button" data-theme-toggle aria-label="Switch to dark theme" aria-pressed="false"><svg class="h-4 w-4 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="3.5" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" /></svg><svg class="hidden h-4 w-4 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.3 15.2A8.5 8.5 0 0 1 8.8 3.7 8.5 8.5 0 1 0 20.3 15.2Z" /></svg></button>
+      </div>
+    </header>
+
+    <main class="overflow-hidden">
+      <section class="relative border-b border-stone-200 dark:border-stone-800">
+        <div class="hero-grid absolute inset-0 -z-10" aria-hidden="true"></div>
+        <div class="mx-auto max-w-6xl px-6 py-16 sm:py-24">
+          <a class="inline-flex items-center gap-2 text-sm font-semibold text-stone-500 hover:text-rose-600 dark:text-stone-400 dark:hover:text-rose-400" href="/#projects"><span aria-hidden="true">←</span> All projects</a>
+          <div class="mt-12 grid items-end gap-10 lg:grid-cols-[1fr_auto]">
+            <div><p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-rose-600 dark:text-rose-400">Featured project</p><h1 class="mt-4 text-5xl font-black tracking-[-0.055em] text-stone-950 sm:text-7xl dark:text-white">Mailzard<span class="text-rose-600">.</span></h1><p class="mt-6 max-w-3xl text-lg leading-8 text-stone-600 dark:text-stone-300">An email automation platform for creating campaigns and templates, scheduling sends, managing subscribers, and tracking analytics.</p></div>
+            <div class="flex flex-wrap gap-3"><a class="rounded-full bg-stone-950 px-5 py-3 text-sm font-semibold text-white transition hover:bg-rose-600 dark:bg-stone-100 dark:text-stone-950 dark:hover:bg-rose-500 dark:hover:text-white" href="https://mailzard.tonyghouse.com" target="_blank" rel="noreferrer">Live site ↗</a><a class="rounded-full border border-stone-300 px-5 py-3 text-sm font-semibold transition hover:border-rose-500 hover:text-rose-600 dark:border-stone-700 dark:hover:text-rose-400" href="https://github.com/tonyghouse/mailzard-ui" target="_blank" rel="noreferrer">Source code ↗</a></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 py-14 sm:py-20">
+        <div class="relative aspect-[16/8] overflow-hidden rounded-3xl border border-stone-200 bg-white shadow-[0_30px_90px_-45px_rgba(28,25,23,0.6)] dark:border-stone-800 dark:bg-stone-900"><img class="h-full w-full object-cover" src="/assets/images/projects/blank-banner-light.png" alt="Abstract Mailzard project banner" /><span class="absolute inset-0 grid place-items-center bg-stone-950/5 text-5xl font-black tracking-[-0.05em] text-stone-900 sm:text-7xl dark:bg-stone-950/35 dark:text-white">Mailzard<span class="text-rose-600">.</span></span></div>
+        <div class="mt-16 grid gap-12 lg:grid-cols-[0.65fr_0.35fr] lg:gap-20">
+          <div><p class="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-rose-600 dark:text-rose-400">Overview</p><h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Email workflows, simplified</h2><p class="mt-6 leading-8 text-stone-600 dark:text-stone-300">Mailzard combines marketing and transactional email workflows in one product. It covers the path from preparing reusable content to scheduling delivery and understanding campaign performance.</p><div class="mt-10 grid gap-4 sm:grid-cols-2"><article class="rounded-2xl border border-stone-200 bg-white/60 p-6 dark:border-stone-800 dark:bg-stone-900/60"><h3 class="font-bold">Create and send</h3><p class="mt-3 text-sm leading-7 text-stone-600 dark:text-stone-300">Build campaigns and templates, then schedule email delivery.</p></article><article class="rounded-2xl border border-stone-200 bg-white/60 p-6 dark:border-stone-800 dark:bg-stone-900/60"><h3 class="font-bold">Manage and measure</h3><p class="mt-3 text-sm leading-7 text-stone-600 dark:text-stone-300">Organize subscribers and follow campaign analytics from the same workflow.</p></article></div></div>
+          <aside class="rounded-2xl border border-stone-200 bg-white/60 p-7 dark:border-stone-800 dark:bg-stone-900/60"><p class="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-rose-600 dark:text-rose-400">Technology</p><ul class="mt-5 space-y-3 text-sm text-stone-600 dark:text-stone-300"><li>Spring Boot</li><li>React / Next.js</li><li>Postgres</li></ul></aside>
+        </div>
+      </section>
+
+      <section class="border-y border-stone-200 bg-white/40 dark:border-stone-800 dark:bg-stone-900/30"><div class="mx-auto flex max-w-6xl flex-col justify-between gap-6 px-6 py-14 sm:flex-row sm:items-center"><div><p class="font-mono text-xs uppercase tracking-[0.18em] text-stone-500">Previous project</p><h2 class="mt-2 text-2xl font-bold">Social Raven</h2></div><a class="text-sm font-semibold text-rose-600 hover:text-rose-700 dark:text-rose-400" href="/projects/social-raven/">View project →</a></div></section>
+      <footer class="mx-auto flex max-w-6xl items-center justify-between px-6 py-7 text-xs text-stone-500"><span>© 2026 Tony Ghouse</span><a class="hover:text-rose-600 dark:hover:text-rose-400" href="/#projects">All projects ↑</a></footer>
+    </main>
+  </body>
+</html>

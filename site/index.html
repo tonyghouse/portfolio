@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Tony Ghouse is a software developer focused on fast, scalable backend systems." />
+    <meta name="description" content="Tony Ghouse is a backend-focused software developer building fast, scalable products and contributing to open source." />
     <meta name="theme-color" content="#f7f5f2" />
     <title>Tony Ghouse — Software Developer</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -17,121 +17,256 @@
     <script src="/router.js" defer></script>
   </head>
   <body class="min-h-screen overflow-x-hidden bg-[#f7f5f2] font-sans text-stone-950 antialiased transition-colors duration-300 dark:bg-stone-950 dark:text-stone-100">
-    <header class="sticky top-0 z-50 border-b border-stone-200/80 bg-[#f7f5f2]/85 backdrop-blur-xl dark:border-stone-800 dark:bg-stone-950/85">
-      <div class="mx-auto flex min-h-20 max-w-6xl flex-wrap items-center justify-between gap-x-6 px-6 py-3">
-        <a class="group flex items-center gap-3 font-semibold tracking-tight" href="/" aria-label="Tony Ghouse home">
+    <header class="sticky top-0 z-50 border-b border-stone-200/80 bg-[#f7f5f2]/90 backdrop-blur-xl dark:border-stone-800 dark:bg-stone-950/90">
+      <div class="mx-auto flex min-h-18 max-w-6xl items-center gap-3 px-4 sm:px-6">
+        <a class="group mr-auto flex shrink-0 items-center gap-3 font-semibold tracking-tight" href="#top" aria-label="Tony Ghouse home">
           <span class="brand-mark h-9 w-9 text-stone-950 transition-transform duration-300 group-hover:-rotate-6 dark:text-stone-100" aria-hidden="true"></span>
-          <span>Tony Ghouse</span>
+          <span class="hidden sm:inline">Tony Ghouse</span>
         </a>
-
-        <div class="flex items-center gap-2">
-          <nav class="hidden sm:block" aria-label="Main navigation">
-            <ul class="flex items-center gap-1 text-sm text-stone-600 dark:text-stone-400">
-              <li><a class="rounded-full bg-stone-200/70 px-3 py-2 font-medium text-stone-950 dark:bg-stone-800 dark:text-stone-100" href="/" aria-current="page">Home</a></li>
-              <li><a class="rounded-full px-3 py-2 hover:bg-stone-200/70 hover:text-stone-950 dark:hover:bg-stone-800 dark:hover:text-stone-100" href="/projects/">Projects</a></li>
-              <li><a class="rounded-full px-3 py-2 hover:bg-stone-200/70 hover:text-stone-950 dark:hover:bg-stone-800 dark:hover:text-stone-100" href="/experience/">Experience</a></li>
-              <li><a class="rounded-full px-3 py-2 hover:bg-stone-200/70 hover:text-stone-950 dark:hover:bg-stone-800 dark:hover:text-stone-100" href="/about/">About</a></li>
-              <li><a class="rounded-full px-3 py-2 hover:bg-stone-200/70 hover:text-stone-950 dark:hover:bg-stone-800 dark:hover:text-stone-100" href="/blog/">Blog</a></li>
-            </ul>
-          </nav>
-
-          <button class="grid h-10 w-10 cursor-pointer place-items-center rounded-full border border-stone-300 bg-white/70 text-stone-700 transition hover:border-rose-400 hover:text-rose-600 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-300 dark:hover:border-rose-500 dark:hover:text-rose-400" type="button" data-theme-toggle aria-label="Switch to dark theme" aria-pressed="false">
-            <svg class="h-4 w-4 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-              <circle cx="12" cy="12" r="3.5" />
-              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
-            </svg>
-            <svg class="hidden h-4 w-4 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-              <path d="M20.3 15.2A8.5 8.5 0 0 1 8.8 3.7 8.5 8.5 0 1 0 20.3 15.2Z" />
-            </svg>
-          </button>
-        </div>
-
-        <nav class="order-3 min-w-0 w-full overflow-x-auto sm:hidden" aria-label="Mobile navigation">
-          <ul class="flex w-max min-w-full items-center justify-between gap-6 pt-2 text-xs text-stone-600 dark:text-stone-400">
-            <li><a class="font-semibold text-stone-950 dark:text-stone-100" href="/" aria-current="page">Home</a></li>
-            <li><a class="hover:text-stone-950 dark:hover:text-stone-100" href="/projects/">Projects</a></li>
-            <li><a class="hover:text-stone-950 dark:hover:text-stone-100" href="/experience/">Experience</a></li>
-            <li><a class="hover:text-stone-950 dark:hover:text-stone-100" href="/about/">About</a></li>
-            <li><a class="hover:text-stone-950 dark:hover:text-stone-100" href="/blog/">Blog</a></li>
+        <nav class="overflow-x-auto" aria-label="Main navigation">
+          <ul class="flex w-max items-center gap-0.5 text-xs font-medium text-stone-600 sm:gap-1 sm:text-sm dark:text-stone-400">
+            <li><a class="rounded-full px-2.5 py-2 transition hover:bg-stone-200/70 hover:text-stone-950 sm:px-3 dark:hover:bg-stone-800 dark:hover:text-stone-100" href="#skills">Skills</a></li>
+            <li><a class="rounded-full px-2.5 py-2 transition hover:bg-stone-200/70 hover:text-stone-950 sm:px-3 dark:hover:bg-stone-800 dark:hover:text-stone-100" href="#experience">Experience</a></li>
+            <li><a class="rounded-full px-2.5 py-2 transition hover:bg-stone-200/70 hover:text-stone-950 sm:px-3 dark:hover:bg-stone-800 dark:hover:text-stone-100" href="#projects">Projects</a></li>
+            <li><a class="rounded-full px-2.5 py-2 transition hover:bg-stone-200/70 hover:text-stone-950 sm:px-3 dark:hover:bg-stone-800 dark:hover:text-stone-100" href="/blog/">Blog</a></li>
           </ul>
         </nav>
+        <button class="grid h-9 w-9 shrink-0 cursor-pointer place-items-center rounded-full border border-stone-300 bg-white/70 text-stone-700 transition hover:border-rose-400 hover:text-rose-600 sm:h-10 sm:w-10 dark:border-stone-700 dark:bg-stone-900 dark:text-stone-300 dark:hover:border-rose-500 dark:hover:text-rose-400" type="button" data-theme-toggle aria-label="Switch to dark theme" aria-pressed="false">
+          <svg class="h-4 w-4 dark:hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="3.5" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" /></svg>
+          <svg class="hidden h-4 w-4 dark:block" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.3 15.2A8.5 8.5 0 0 1 8.8 3.7 8.5 8.5 0 1 0 20.3 15.2Z" /></svg>
+        </button>
       </div>
     </header>
 
     <main class="overflow-hidden">
-      <section class="relative mx-auto grid min-h-[calc(100svh-80px)] w-full max-w-6xl grid-cols-1 items-center gap-16 px-6 py-16 lg:grid-cols-[1.08fr_0.92fr] lg:py-24">
-        <div class="relative z-10 min-w-0">
-          <p class="mb-5 flex items-center gap-3 font-mono text-xs font-semibold uppercase tracking-[0.24em] text-rose-600 dark:text-rose-400">
-            <span class="h-px w-8 bg-current" aria-hidden="true"></span>
-            Hello, I’m
-          </p>
-          <h1 class="max-w-3xl text-6xl font-black leading-[0.92] tracking-[-0.065em] text-stone-950 sm:text-7xl lg:text-[5.8rem] dark:text-white">
-            Tony<br />Ghouse<span class="text-rose-600 dark:text-rose-500">.</span>
-          </h1>
-          <h2 class="mt-7 text-xl font-medium tracking-tight text-stone-500 sm:text-2xl dark:text-stone-400">Software Developer</h2>
-          <p class="mt-6 max-w-2xl text-base leading-8 text-stone-600 sm:text-lg dark:text-stone-300">
-            I’m a developer and computer science graduate specializing in backend development and building software with exceptional performance and scalability. Currently, I’m focused on building skills, creating projects, and contributing to open-source software.
-          </p>
-
-          <div class="mt-9 flex flex-wrap gap-3">
-            <a class="group inline-flex items-center gap-2 rounded-full bg-stone-950 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-rose-600 dark:bg-stone-100 dark:text-stone-950 dark:hover:bg-rose-500 dark:hover:text-white" href="/projects/">
-              View projects
-              <svg class="h-4 w-4 transition-transform group-hover:translate-x-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
-            </a>
-            <a class="inline-flex items-center rounded-full border border-stone-300 bg-white/60 px-5 py-3 text-sm font-semibold text-stone-700 transition hover:-translate-y-0.5 hover:border-stone-500 hover:text-stone-950 dark:border-stone-700 dark:bg-stone-900/70 dark:text-stone-300 dark:hover:border-stone-500 dark:hover:text-white" href="/blog/">Read the blog</a>
+      <section id="top" class="relative scroll-mt-20 border-b border-stone-200 dark:border-stone-800">
+        <div class="hero-grid absolute inset-0 -z-10" aria-hidden="true"></div>
+        <div class="mx-auto grid max-w-6xl items-center gap-12 px-6 py-16 sm:py-20 lg:grid-cols-[1.08fr_0.92fr] lg:py-24">
+          <div class="relative z-10 min-w-0">
+            <p class="mb-5 flex items-center gap-3 font-mono text-xs font-semibold uppercase tracking-[0.24em] text-rose-600 dark:text-rose-400"><span class="h-px w-8 bg-current" aria-hidden="true"></span>Hello, I’m</p>
+            <h1 class="max-w-3xl text-6xl font-black leading-[0.92] tracking-[-0.065em] text-stone-950 sm:text-7xl lg:text-[5.8rem] dark:text-white">Tony<br />Ghouse<span class="text-rose-600 dark:text-rose-500">.</span></h1>
+            <p class="mt-7 text-xl font-medium tracking-tight text-stone-500 sm:text-2xl dark:text-stone-400">Backend-focused software developer</p>
+            <p class="mt-6 max-w-2xl text-base leading-8 text-stone-600 sm:text-lg dark:text-stone-300">I build reliable, high-performance software and practical products. My work spans backend systems, data-heavy workflows, and open-source contributions.</p>
+            <div class="mt-9 flex flex-wrap gap-3">
+              <a class="group inline-flex items-center gap-2 rounded-full bg-stone-950 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-rose-600 dark:bg-stone-100 dark:text-stone-950 dark:hover:bg-rose-500 dark:hover:text-white" href="#skills">Explore the portfolio <svg class="h-4 w-4 transition-transform group-hover:translate-y-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg></a>
+              <a class="inline-flex items-center rounded-full border border-stone-300 bg-white/60 px-5 py-3 text-sm font-semibold text-stone-700 transition hover:-translate-y-0.5 hover:border-stone-500 hover:text-stone-950 dark:border-stone-700 dark:bg-stone-900/70 dark:text-stone-300 dark:hover:border-stone-500 dark:hover:text-white" href="mailto:tonyghouse@icloud.com">Get in touch</a>
+            </div>
+            <ul class="mt-9 flex flex-wrap gap-x-5 gap-y-3 text-sm font-medium text-stone-500 dark:text-stone-400" aria-label="Social links">
+              <li><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://github.com/tonyghouse" target="_blank" rel="noreferrer">GitHub ↗</a></li>
+              <li><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://www.linkedin.com/in/tonyghouse/" target="_blank" rel="noreferrer">LinkedIn ↗</a></li>
+              <li><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://twitter.com/tonyghouse" target="_blank" rel="noreferrer">Twitter ↗</a></li>
+              <li><a class="hover:text-rose-600 dark:hover:text-rose-400" href="mailto:tonyghouse@icloud.com">Email ↗</a></li>
+            </ul>
           </div>
-
-          <ul class="mt-10 flex flex-wrap gap-x-5 gap-y-3 text-sm font-medium text-stone-500 dark:text-stone-400" aria-label="Social links">
-            <li><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://github.com/tonyghouse" target="_blank" rel="noreferrer">GitHub ↗</a></li>
-            <li><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://www.linkedin.com/in/tonyghouse/" target="_blank" rel="noreferrer">LinkedIn ↗</a></li>
-            <li><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://twitter.com/tonyghouse" target="_blank" rel="noreferrer">Twitter ↗</a></li>
-            <li><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://leetcode.com/tonyghouse/" target="_blank" rel="noreferrer">LeetCode ↗</a></li>
-            <li><a class="hover:text-rose-600 dark:hover:text-rose-400" href="mailto:tonyghouseofficial@gmail.com">Email ↗</a></li>
-          </ul>
-        </div>
-
-        <div class="relative mx-auto min-w-0 w-full max-w-xl lg:mx-0">
-          <div class="hero-grid absolute -inset-20 -z-10" aria-hidden="true"></div>
-          <div class="absolute -right-12 -top-14 -z-10 h-48 w-48 rounded-full bg-rose-300/40 blur-3xl dark:bg-rose-700/20" aria-hidden="true"></div>
-          <div class="overflow-hidden rounded-[1.75rem] border border-stone-300/80 bg-white/80 shadow-[0_30px_80px_-35px_rgba(28,25,23,0.45)] backdrop-blur dark:border-stone-700/80 dark:bg-stone-900/80 dark:shadow-black/50">
-            <div class="flex items-center justify-between border-b border-stone-200 px-5 py-4 dark:border-stone-800">
-              <div class="flex gap-2" aria-hidden="true">
-                <span class="h-2.5 w-2.5 rounded-full bg-rose-500"></span>
-                <span class="h-2.5 w-2.5 rounded-full bg-amber-400"></span>
-                <span class="h-2.5 w-2.5 rounded-full bg-emerald-500"></span>
-              </div>
-              <span class="font-mono text-[0.68rem] uppercase tracking-[0.18em] text-stone-400">tony@portfolio</span>
-            </div>
-            <div class="space-y-7 px-6 py-8 font-mono text-sm sm:px-8 sm:py-10 sm:text-base">
-              <div>
-                <p class="text-stone-400"><span class="mr-2 text-rose-500">$</span>whoami</p>
-                <p class="mt-2 text-stone-800 dark:text-stone-200">Tony Ghouse</p>
-              </div>
-              <div>
-                <p class="text-stone-400"><span class="mr-2 text-rose-500">$</span>cat focus.txt</p>
-                <p class="mt-2 leading-7 text-stone-800 dark:text-stone-200">Backend systems<br />Performance · Scalability<br />Open source</p>
-              </div>
-              <div>
-                <p class="text-stone-400"><span class="mr-2 text-rose-500">$</span>status</p>
-                <p class="mt-2 flex items-center gap-2 text-stone-800 dark:text-stone-200"><span class="h-2 w-2 animate-pulse rounded-full bg-emerald-500" aria-hidden="true"></span>Building useful software</p>
+          <div class="relative mx-auto min-w-0 w-full max-w-xl lg:mx-0">
+            <div class="absolute -right-12 -top-14 -z-10 h-48 w-48 rounded-full bg-rose-300/40 blur-3xl dark:bg-rose-700/20" aria-hidden="true"></div>
+            <div class="overflow-hidden rounded-[1.75rem] border border-stone-300/80 bg-white/80 shadow-[0_30px_80px_-35px_rgba(28,25,23,0.45)] backdrop-blur dark:border-stone-700/80 dark:bg-stone-900/80 dark:shadow-black/50">
+              <div class="flex items-center justify-between border-b border-stone-200 px-5 py-4 dark:border-stone-800"><div class="flex gap-2" aria-hidden="true"><span class="h-2.5 w-2.5 rounded-full bg-rose-500"></span><span class="h-2.5 w-2.5 rounded-full bg-amber-400"></span><span class="h-2.5 w-2.5 rounded-full bg-emerald-500"></span></div><span class="font-mono text-[0.68rem] uppercase tracking-[0.18em] text-stone-400">tony@portfolio</span></div>
+              <div class="space-y-7 px-6 py-8 font-mono text-sm sm:px-8 sm:py-10 sm:text-base">
+                <div><p class="text-stone-400"><span class="mr-2 text-rose-500">$</span>cat focus.txt</p><p class="mt-2 leading-7 text-stone-800 dark:text-stone-200">Backend systems<br />Performance · Scalability<br />Open source</p></div>
+                <div><p class="text-stone-400"><span class="mr-2 text-rose-500">$</span>experience --years</p><p class="mt-2 text-stone-800 dark:text-stone-200">5+ years shipping software</p></div>
+                <div><p class="text-stone-400"><span class="mr-2 text-rose-500">$</span>status</p><p class="mt-2 flex items-center gap-2 text-stone-800 dark:text-stone-200"><span class="h-2 w-2 animate-pulse rounded-full bg-emerald-500" aria-hidden="true"></span>Building useful software</p></div>
               </div>
             </div>
-            <div class="flex items-center justify-between border-t border-stone-200 bg-stone-50/80 px-6 py-4 text-xs text-stone-500 dark:border-stone-800 dark:bg-stone-950/50 dark:text-stone-400">
-              <span>India</span>
-              <span class="font-mono">UTF-8</span>
-            </div>
-          </div>
-          <div class="absolute -bottom-5 -left-3 flex items-center gap-3 rounded-2xl border border-stone-300 bg-[#f7f5f2] px-4 py-3 shadow-lg sm:-left-8 dark:border-stone-700 dark:bg-stone-900">
-            <span class="brand-mark h-8 w-8 text-rose-600 dark:text-rose-500" aria-hidden="true"></span>
-            <span class="text-xs font-semibold uppercase tracking-[0.16em] text-stone-600 dark:text-stone-300">Think · Build · Ship</span>
           </div>
         </div>
       </section>
 
-      <div class="mx-auto flex max-w-6xl items-center justify-between border-t border-stone-200 px-6 py-6 text-xs text-stone-500 dark:border-stone-800 dark:text-stone-500">
-        <span>© 2026 Tony Ghouse</span>
-        <a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://github.com/tonyghouse" target="_blank" rel="noreferrer">Built by Tony Ghouse ↗</a>
-      </div>
+      <section id="skills" class="scroll-mt-20 border-b border-stone-200 dark:border-stone-800" aria-labelledby="skills-title">
+        <div class="mx-auto max-w-6xl px-6 py-20 sm:py-28">
+          <div class="grid gap-12 lg:grid-cols-[0.32fr_0.68fr] lg:gap-20">
+            <div>
+              <p class="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-rose-600 dark:text-rose-400">01 / Toolkit</p>
+              <h2 id="skills-title" class="mt-3 text-4xl font-black tracking-[-0.04em] sm:text-5xl">Skills<span class="text-rose-600">.</span></h2>
+              <p class="mt-5 leading-7 text-stone-600 dark:text-stone-300">The technologies I use to build, ship, and operate reliable software.</p>
+              <p class="mt-5 leading-7 text-stone-600 dark:text-stone-300">Backend-minded, with a practical understanding of the complete product stack.</p>
+            </div>
+
+            <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4" aria-label="Technology skills">
+              <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 transition hover:-translate-y-1 hover:border-rose-300 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900/60 dark:hover:border-rose-800"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/java.svg" alt="" /><span class="font-mono text-sm">Java</span></li>
+              <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 transition hover:-translate-y-1 hover:border-rose-300 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900/60 dark:hover:border-rose-800"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/javascript.svg" alt="" /><span class="font-mono text-sm">JavaScript</span></li>
+              <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 transition hover:-translate-y-1 hover:border-rose-300 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900/60 dark:hover:border-rose-800"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/spring.svg" alt="" /><span class="font-mono text-sm">Spring</span></li>
+              <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 transition hover:-translate-y-1 hover:border-rose-300 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900/60 dark:hover:border-rose-800"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/reactjs.svg" alt="" /><span class="font-mono text-sm">React</span></li>
+              <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 transition hover:-translate-y-1 hover:border-rose-300 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900/60 dark:hover:border-rose-800"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/postgresql.svg" alt="" /><span class="font-mono text-sm">Postgres</span></li>
+              <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 transition hover:-translate-y-1 hover:border-rose-300 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900/60 dark:hover:border-rose-800"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/mongodb.svg" alt="" /><span class="font-mono text-sm">MongoDB</span></li>
+              <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 transition hover:-translate-y-1 hover:border-rose-300 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900/60 dark:hover:border-rose-800"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/redis.svg" alt="" /><span class="font-mono text-sm">Redis</span></li>
+              <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 transition hover:-translate-y-1 hover:border-rose-300 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900/60 dark:hover:border-rose-800"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/kafka.svg" alt="" /><span class="font-mono text-sm">Kafka</span></li>
+              <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 transition hover:-translate-y-1 hover:border-rose-300 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900/60 dark:hover:border-rose-800"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/graphql.svg" alt="" /><span class="font-mono text-sm">GraphQL</span></li>
+              <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 transition hover:-translate-y-1 hover:border-rose-300 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900/60 dark:hover:border-rose-800"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/meilisearch.svg" alt="" /><span class="font-mono text-sm">Meilisearch</span></li>
+              <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 transition hover:-translate-y-1 hover:border-rose-300 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900/60 dark:hover:border-rose-800"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/docker.svg" alt="" /><span class="font-mono text-sm">Docker</span></li>
+              <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 transition hover:-translate-y-1 hover:border-rose-300 hover:shadow-lg dark:border-stone-800 dark:bg-stone-900/60 dark:hover:border-rose-800"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/kubernetes.svg" alt="" /><span class="font-mono text-sm">Kubernetes</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="scroll-mt-20 border-b border-stone-200 bg-white/40 dark:border-stone-800 dark:bg-stone-900/30" aria-labelledby="experience-title">
+        <div class="mx-auto max-w-6xl px-6 py-20 sm:py-28">
+          <div class="grid gap-12 lg:grid-cols-[0.32fr_0.68fr] lg:gap-20">
+            <div>
+              <p class="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-rose-600 dark:text-rose-400">02 / Career</p>
+              <h2 id="experience-title" class="mt-3 text-4xl font-black tracking-[-0.04em] sm:text-5xl">Experience<span class="text-rose-600">.</span></h2>
+              <p class="mt-5 text-xl font-bold tracking-tight text-stone-800 dark:text-stone-200" data-total-experience-base-months="54" data-current-tenure-start="2026-02">5 years 1 month</p>
+              <p class="mt-3 leading-7 text-stone-600 dark:text-stone-300">Building backend applications, improving performance, and shipping reliable data-heavy systems.</p>
+            </div>
+
+            <div class="relative space-y-6 before:absolute before:bottom-4 before:left-[0.42rem] before:top-4 before:w-px before:bg-stone-300 dark:before:bg-stone-700">
+              <article class="relative pl-10">
+                <span class="absolute left-0 top-2 h-3.5 w-3.5 rounded-full border-4 border-white bg-rose-600 ring-1 ring-rose-600 dark:border-stone-900 dark:bg-rose-500 dark:ring-rose-500" aria-hidden="true"></span>
+                <div class="rounded-2xl border border-stone-200 bg-[#f7f5f2] p-6 shadow-[0_20px_50px_-42px_rgba(28,25,23,0.7)] sm:p-8 dark:border-stone-800 dark:bg-stone-950">
+                  <p class="font-mono text-xs uppercase tracking-wider text-stone-500">Feb 2026 — Present · <span data-tenure-start="2026-02">7 months</span></p>
+                  <h3 class="mt-3 text-xl font-bold sm:text-2xl"><span class="text-rose-600 dark:text-rose-400">Jumio Corporation</span></h3>
+                  <p class="mt-3 font-semibold text-stone-800 dark:text-stone-200">Senior Software Engineer</p>
+                  <p class="mt-2 text-sm font-medium text-stone-500 dark:text-stone-400">Full-time · Remote</p>
+                </div>
+              </article>
+
+              <article class="relative pl-10">
+                <span class="absolute left-0 top-2 h-3.5 w-3.5 rounded-full border-4 border-white bg-stone-400 ring-1 ring-stone-400 dark:border-stone-900 dark:bg-stone-500 dark:ring-stone-500" aria-hidden="true"></span>
+                <div class="rounded-2xl border border-stone-200 bg-[#f7f5f2] p-6 shadow-[0_20px_50px_-42px_rgba(28,25,23,0.7)] sm:p-8 dark:border-stone-800 dark:bg-stone-950">
+                  <p class="font-mono text-xs uppercase tracking-wider text-stone-500">Nov 2023 — Oct 2025 · 1 year 11 months</p>
+                  <h3 class="mt-3 text-xl font-bold sm:text-2xl"><a class="text-rose-600 hover:underline dark:text-rose-400" href="https://www.symphonyai.com/" target="_blank" rel="noreferrer">SymphonyAI</a></h3>
+                  <p class="mt-3 font-semibold text-stone-800 dark:text-stone-200">Software Developer</p>
+                  <p class="mt-2 text-sm font-medium text-stone-500 dark:text-stone-400">Full-time</p>
+                  <ul class="mt-6 space-y-3 text-sm leading-7 text-stone-600 marker:text-rose-500 sm:text-base dark:text-stone-300">
+                    <li class="ml-5 list-disc pl-2">Used AI search over vectorized data with large language models for essential data-matching operations.</li>
+                    <li class="ml-5 list-disc pl-2">Developed event-driven architectures with Azure Service Bus for real-time data processing.</li>
+                    <li class="ml-5 list-disc pl-2">Implemented caching strategies with Redis and the Jedis library.</li>
+                    <li class="ml-5 list-disc pl-2">Built large-scale XLS and CSV ingestion using Apache POI and Apache Commons CSV.</li>
+                    <li class="ml-5 list-disc pl-2">Implemented bulk imports from client files with multithreading through Spring Reactive.</li>
+                    <li class="ml-5 list-disc pl-2">Strengthened inter-service security with JWT and role-based access control.</li>
+                    <li class="ml-5 list-disc pl-2">Added real-time invoice PDF generation with Thymeleaf, improving system productivity and user interaction.</li>
+                    <li class="ml-5 list-disc pl-2">Reviewed teammates’ design and code changes to identify bugs and quality issues.</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="relative pl-10">
+                <span class="absolute left-0 top-2 h-3.5 w-3.5 rounded-full border-4 border-white bg-stone-400 ring-1 ring-stone-400 dark:border-stone-900 dark:bg-stone-500 dark:ring-stone-500" aria-hidden="true"></span>
+                <div class="rounded-2xl border border-stone-200 bg-[#f7f5f2] p-6 shadow-[0_20px_50px_-42px_rgba(28,25,23,0.7)] sm:p-8 dark:border-stone-800 dark:bg-stone-950">
+                  <p class="font-mono text-xs uppercase tracking-wider text-stone-500">Mar 2021 — Sep 2023 · 2 years 7 months</p>
+                  <h3 class="mt-3 text-xl font-bold sm:text-2xl"><a class="text-rose-600 hover:underline dark:text-rose-400" href="https://www.ltimindtree.com/" target="_blank" rel="noreferrer">LTIMindtree</a></h3>
+                  <p class="mt-2 text-sm font-medium text-stone-500 dark:text-stone-400">Full-time</p>
+
+                  <div class="mt-7 border-t border-stone-200 pt-7 dark:border-stone-800">
+                    <p class="font-mono text-xs uppercase tracking-wider text-stone-500">Jan 2023 — Sep 2023</p>
+                    <h4 class="mt-2 text-lg font-bold">Senior Software Engineer (SDE-2)</h4>
+                    <ul class="mt-5 space-y-3 text-sm leading-7 text-stone-600 marker:text-rose-500 sm:text-base dark:text-stone-300">
+                    <li class="ml-5 list-disc pl-2">Designed and implemented the application’s primary workflow, reducing development time.</li>
+                    <li class="ml-5 list-disc pl-2">Developed an ETL job with a 10× reduction in execution time and lower CPU and memory use.</li>
+                    <li class="ml-5 list-disc pl-2">Diagnosed performance issues with JProfiler and reduced resource consumption by 2×.</li>
+                    <li class="ml-5 list-disc pl-2">Optimized Postgres queries by analyzing execution plans, cutting query time by 2×.</li>
+                    <li class="ml-5 list-disc pl-2">Introduced QueryDSL to express database queries with less code.</li>
+                    <li class="ml-5 list-disc pl-2">Deployed containerized applications through Bitbucket Pipelines and Amazon EKS.</li>
+                    </ul>
+                  </div>
+
+                  <div class="mt-7 border-t border-stone-200 pt-7 dark:border-stone-800">
+                    <p class="font-mono text-xs uppercase tracking-wider text-stone-500">Mar 2021 — Dec 2022</p>
+                    <h4 class="mt-2 text-lg font-bold">Software Engineer (SDE-1)</h4>
+                    <ul class="mt-5 space-y-3 text-sm leading-7 text-stone-600 marker:text-rose-500 sm:text-base dark:text-stone-300">
+                      <li class="ml-5 list-disc pl-2">Quickly learned client requirements and the application workflow to improve team productivity.</li>
+                      <li class="ml-5 list-disc pl-2">Helped design the application workflow around a minimal set of API endpoints.</li>
+                      <li class="ml-5 list-disc pl-2">Translated business requirements into core functionality with minimal defects.</li>
+                      <li class="ml-5 list-disc pl-2">Built a faster search implementation with QueryDSL, reducing response time by 4×.</li>
+                      <li class="ml-5 list-disc pl-2">Wrote unit tests with JUnit and Mockito to verify application behavior and reliability.</li>
+                    </ul>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="scroll-mt-20 border-b border-stone-200 dark:border-stone-800" aria-labelledby="projects-title">
+        <div class="mx-auto max-w-6xl px-6 py-20 sm:py-28">
+          <div class="mb-12 flex items-end justify-between gap-6">
+            <div>
+              <p class="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-rose-600 dark:text-rose-400">03 / Selected work</p>
+              <h2 id="projects-title" class="mt-3 text-4xl font-black tracking-[-0.04em] sm:text-5xl">Projects<span class="text-rose-600">.</span></h2>
+              <p class="mt-5 max-w-2xl leading-7 text-stone-600 dark:text-stone-300">Products and developer tools built around reliable backend systems, useful workflows, and clean interfaces.</p>
+            </div>
+            <a class="hidden text-sm font-semibold text-stone-500 transition hover:text-rose-600 sm:block dark:text-stone-400 dark:hover:text-rose-400" href="https://github.com/tonyghouse?tab=repositories" target="_blank" rel="noreferrer">All GitHub repositories ↗</a>
+          </div>
+
+          <div class="space-y-10">
+            <article class="grid overflow-hidden rounded-3xl border border-stone-200 bg-white/70 shadow-[0_24px_70px_-48px_rgba(28,25,23,0.6)] lg:grid-cols-[1.2fr_0.8fr] dark:border-stone-800 dark:bg-stone-900/60">
+              <a class="group relative min-h-64 overflow-hidden bg-stone-100 lg:min-h-[28rem] dark:bg-stone-900" href="/projects/social-raven/" aria-label="Read the Social Raven project details">
+                <img class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.015] dark:hidden" src="/assets/images/projects/socialraven-banner-light.png" alt="Social Raven sign-up interface" />
+                <img class="hidden h-full w-full object-cover transition duration-500 group-hover:scale-[1.015] dark:block" src="/assets/images/projects/socialraven-banner-dark.png" alt="Social Raven sign-up interface in dark mode" />
+              </a>
+              <div class="flex flex-col justify-center p-7 sm:p-10">
+                <p class="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-rose-600 dark:text-rose-400">Featured project</p>
+                <h3 class="mt-3 text-3xl font-bold tracking-tight"><a class="hover:text-rose-600 dark:hover:text-rose-400" href="/projects/social-raven/">Social Raven</a></h3>
+                <p class="mt-2 text-sm font-medium text-stone-500 dark:text-stone-400">Social media management tool</p>
+                <p class="mt-6 leading-7 text-stone-600 dark:text-stone-300">A social media management product for scheduling posts and analyzing traffic across social accounts.</p>
+                <ul class="mt-7 flex flex-wrap gap-2 font-mono text-[0.7rem] uppercase tracking-wide text-stone-600 dark:text-stone-300" aria-label="Social Raven technologies"><li class="rounded-full border border-stone-300 px-3 py-1.5 dark:border-stone-700">Spring Boot</li><li class="rounded-full border border-stone-300 px-3 py-1.5 dark:border-stone-700">React / Next.js</li><li class="rounded-full border border-stone-300 px-3 py-1.5 dark:border-stone-700">Postgres</li><li class="rounded-full border border-stone-300 px-3 py-1.5 dark:border-stone-700">Kafka</li><li class="rounded-full border border-stone-300 px-3 py-1.5 dark:border-stone-700">Redis</li></ul>
+                <div class="mt-8 flex flex-wrap gap-3"><a class="rounded-full bg-stone-950 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-rose-600 dark:bg-stone-100 dark:text-stone-950 dark:hover:bg-rose-500 dark:hover:text-white" href="/projects/social-raven/">Project details</a><a class="rounded-full border border-stone-300 px-4 py-2.5 text-sm font-semibold transition hover:border-rose-500 hover:text-rose-600 dark:border-stone-700 dark:hover:text-rose-400" href="https://socialraven.tonyghouse.com" target="_blank" rel="noreferrer">Live site ↗</a></div>
+              </div>
+            </article>
+
+            <article class="grid overflow-hidden rounded-3xl border border-stone-200 bg-white/70 shadow-[0_24px_70px_-48px_rgba(28,25,23,0.6)] lg:grid-cols-[0.8fr_1.2fr] dark:border-stone-800 dark:bg-stone-900/60">
+              <div class="flex flex-col justify-center p-7 sm:p-10 lg:order-1">
+                <p class="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-rose-600 dark:text-rose-400">Featured project</p>
+                <h3 class="mt-3 text-3xl font-bold tracking-tight"><a class="hover:text-rose-600 dark:hover:text-rose-400" href="/projects/mailzard/">Mailzard</a></h3>
+                <p class="mt-2 text-sm font-medium text-stone-500 dark:text-stone-400">Marketing and transactional email, simplified</p>
+                <p class="mt-6 leading-7 text-stone-600 dark:text-stone-300">An email automation platform for creating campaigns and templates, scheduling sends, managing subscribers, and tracking analytics.</p>
+                <ul class="mt-7 flex flex-wrap gap-2 font-mono text-[0.7rem] uppercase tracking-wide text-stone-600 dark:text-stone-300" aria-label="Mailzard technologies"><li class="rounded-full border border-stone-300 px-3 py-1.5 dark:border-stone-700">Spring Boot</li><li class="rounded-full border border-stone-300 px-3 py-1.5 dark:border-stone-700">React / Next.js</li><li class="rounded-full border border-stone-300 px-3 py-1.5 dark:border-stone-700">Postgres</li></ul>
+                <div class="mt-8 flex flex-wrap gap-3"><a class="rounded-full bg-stone-950 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-rose-600 dark:bg-stone-100 dark:text-stone-950 dark:hover:bg-rose-500 dark:hover:text-white" href="/projects/mailzard/">Project details</a><a class="rounded-full border border-stone-300 px-4 py-2.5 text-sm font-semibold transition hover:border-rose-500 hover:text-rose-600 dark:border-stone-700 dark:hover:text-rose-400" href="https://mailzard.tonyghouse.com" target="_blank" rel="noreferrer">Live site ↗</a></div>
+              </div>
+              <a class="group relative min-h-64 overflow-hidden bg-stone-100 lg:order-2 lg:min-h-[28rem] dark:bg-stone-900" href="/projects/mailzard/" aria-label="Read the Mailzard project details"><img class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.015]" src="/assets/images/projects/blank-banner-light.png" alt="Abstract Mailzard project banner" /><span class="absolute inset-0 grid place-items-center bg-stone-950/5 text-4xl font-black tracking-[-0.05em] text-stone-900 dark:bg-stone-950/35 dark:text-white">Mailzard<span class="text-rose-600">.</span></span></a>
+            </article>
+          </div>
+
+          <div class="mt-16">
+            <p class="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-rose-600 dark:text-rose-400">More work</p>
+            <h3 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Other projects</h3>
+            <div class="mt-8 grid gap-5 md:grid-cols-3">
+              <article class="group flex min-h-72 flex-col rounded-2xl border border-stone-200 bg-white/60 p-7 transition hover:-translate-y-1 hover:border-rose-300 dark:border-stone-800 dark:bg-stone-900/60 dark:hover:border-rose-800"><div class="flex items-start justify-between gap-4"><span class="font-mono text-xs text-rose-600 dark:text-rose-400">01</span><div class="flex gap-3 text-xs font-semibold"><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://github.com/tonyghouse/noteknack-extension" target="_blank" rel="noreferrer">Code ↗</a><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://noteknack.tonyghouse.com" target="_blank" rel="noreferrer">Visit ↗</a></div></div><h4 class="mt-10 text-xl font-bold tracking-tight">NoteKnack</h4><p class="mt-3 flex-1 text-sm leading-7 text-stone-600 dark:text-stone-300">A browser extension that saves notes for different websites.</p><p class="mt-7 font-mono text-xs uppercase tracking-wider text-stone-500">JavaScript</p></article>
+              <article class="group flex min-h-72 flex-col rounded-2xl border border-stone-200 bg-white/60 p-7 transition hover:-translate-y-1 hover:border-rose-300 dark:border-stone-800 dark:bg-stone-900/60 dark:hover:border-rose-800"><div class="flex items-start justify-between gap-4"><span class="font-mono text-xs text-rose-600 dark:text-rose-400">02</span><div class="flex gap-3 text-xs font-semibold"><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://github.com/tonyghouse/tern-monitoring-tool-ui" target="_blank" rel="noreferrer">Code ↗</a><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://tern.tonyghouse.com" target="_blank" rel="noreferrer">Visit ↗</a></div></div><h4 class="mt-10 text-xl font-bold tracking-tight">Tern</h4><p class="mt-3 flex-1 text-sm leading-7 text-stone-600 dark:text-stone-300">A monitoring tool for observing applications across environments.</p><p class="mt-7 font-mono text-xs uppercase leading-5 tracking-wider text-stone-500">Java · Spring · Postgres · Kafka · React / Next.js</p></article>
+              <article class="group flex min-h-72 flex-col rounded-2xl border border-stone-200 bg-white/60 p-7 transition hover:-translate-y-1 hover:border-rose-300 dark:border-stone-800 dark:bg-stone-900/60 dark:hover:border-rose-800"><div class="flex items-start justify-between gap-4"><span class="font-mono text-xs text-rose-600 dark:text-rose-400">03</span><div class="flex gap-3 text-xs font-semibold"><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://github.com/tonyghouse/querycraft-ui" target="_blank" rel="noreferrer">Code ↗</a><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://querycraft.tonyghouse.com" target="_blank" rel="noreferrer">Visit ↗</a></div></div><h4 class="mt-10 text-xl font-bold tracking-tight">QueryCraft</h4><p class="mt-3 flex-1 text-sm leading-7 text-stone-600 dark:text-stone-300">A collection of practical database utility tools.</p><p class="mt-7 font-mono text-xs uppercase tracking-wider text-stone-500">JavaScript · React / Next.js</p></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="border-b border-stone-200 bg-white/40 dark:border-stone-800 dark:bg-stone-900/30" aria-labelledby="featured-writing-title">
+        <div class="mx-auto max-w-6xl px-6 py-20 sm:py-28">
+          <div class="flex flex-col justify-between gap-5 sm:flex-row sm:items-end">
+            <div><p class="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-rose-600 dark:text-rose-400">04 / Writing</p><h2 id="featured-writing-title" class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Featured backend articles</h2><p class="mt-5 max-w-2xl leading-7 text-stone-600 dark:text-stone-300">Practical notes on building backend systems that stay reliable as they grow.</p></div>
+            <a class="text-sm font-semibold text-stone-500 transition hover:text-rose-600 dark:text-stone-400 dark:hover:text-rose-400" href="/blog/">View all articles →</a>
+          </div>
+
+          <div class="mt-10 grid gap-5 lg:grid-cols-3">
+            <article class="group flex min-h-80 flex-col overflow-hidden rounded-2xl border border-stone-200 bg-[#f7f5f2] p-7 transition hover:-translate-y-1 hover:border-rose-300 hover:shadow-xl dark:border-stone-800 dark:bg-stone-950 dark:hover:border-rose-800">
+              <div class="flex items-center justify-between font-mono text-xs uppercase tracking-wider text-stone-500"><span>Architecture</span><span>6 min</span></div>
+              <h3 class="mt-10 text-2xl font-bold leading-tight tracking-tight"><a class="transition group-hover:text-rose-600 dark:group-hover:text-rose-400" href="/blog/how-to-x/">How to Build Backend Systems That Fail Gracefully</a></h3>
+              <p class="mt-4 flex-1 text-sm leading-7 text-stone-600 dark:text-stone-300">A practical look at timeouts, retries, circuit breakers, and the boundaries that keep failures contained.</p>
+              <a class="mt-8 text-sm font-semibold text-rose-600 dark:text-rose-400" href="/blog/how-to-x/">Read preview →</a>
+            </article>
+
+            <article class="group flex min-h-80 flex-col overflow-hidden rounded-2xl border border-stone-200 bg-[#f7f5f2] p-7 transition hover:-translate-y-1 hover:border-rose-300 hover:shadow-xl dark:border-stone-800 dark:bg-stone-950 dark:hover:border-rose-800">
+              <div class="flex items-center justify-between font-mono text-xs uppercase tracking-wider text-stone-500"><span>API design</span><span>5 min</span></div>
+              <h3 class="mt-10 text-2xl font-bold leading-tight tracking-tight"><a class="transition group-hover:text-rose-600 dark:group-hover:text-rose-400" href="/blog/designing-idempotent-apis/">Designing Idempotent APIs That Survive Retries</a></h3>
+              <p class="mt-4 flex-1 text-sm leading-7 text-stone-600 dark:text-stone-300">How idempotency keys and careful state transitions prevent duplicate work in distributed applications.</p>
+              <a class="mt-8 text-sm font-semibold text-rose-600 dark:text-rose-400" href="/blog/designing-idempotent-apis/">Read preview →</a>
+            </article>
+
+            <article class="group flex min-h-80 flex-col overflow-hidden rounded-2xl border border-stone-200 bg-[#f7f5f2] p-7 transition hover:-translate-y-1 hover:border-rose-300 hover:shadow-xl dark:border-stone-800 dark:bg-stone-950 dark:hover:border-rose-800">
+              <div class="flex items-center justify-between font-mono text-xs uppercase tracking-wider text-stone-500"><span>Event driven</span><span>8 min</span></div>
+              <h3 class="mt-10 text-2xl font-bold leading-tight tracking-tight"><a class="transition group-hover:text-rose-600 dark:group-hover:text-rose-400" href="/blog/scaling-event-driven-systems/">Scaling Event-Driven Systems Without Losing Messages</a></h3>
+              <p class="mt-4 flex-1 text-sm leading-7 text-stone-600 dark:text-stone-300">Patterns for delivery guarantees, consumer recovery, and operating message-driven workflows with confidence.</p>
+              <a class="mt-8 text-sm font-semibold text-rose-600 dark:text-rose-400" href="/blog/scaling-event-driven-systems/">Read preview →</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="scroll-mt-20 bg-stone-950 text-stone-100 dark:bg-black" aria-labelledby="contact-title">
+        <div class="mx-auto max-w-6xl px-6 py-20 sm:py-24"><p class="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-rose-400">05 / Let’s talk</p><div class="mt-4 flex flex-col justify-between gap-10 lg:flex-row lg:items-end"><div><h2 id="contact-title" class="max-w-2xl text-4xl font-black tracking-[-0.04em] sm:text-6xl">Have something worth building?</h2><p class="mt-5 max-w-xl leading-7 text-stone-400">I’m always open to thoughtful conversations about software, products, and engineering.</p></div><a class="inline-flex w-fit items-center rounded-full bg-rose-600 px-6 py-3.5 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-rose-500" href="mailto:tonyghouse@icloud.com">tonyghouse@icloud.com ↗</a></div><div class="mt-14 flex flex-wrap gap-x-6 gap-y-3 border-t border-stone-800 pt-7 text-sm text-stone-400"><a class="hover:text-white" href="https://github.com/tonyghouse" target="_blank" rel="noreferrer">GitHub ↗</a><a class="hover:text-white" href="https://www.linkedin.com/in/tonyghouse/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="hover:text-white" href="https://twitter.com/tonyghouse" target="_blank" rel="noreferrer">Twitter ↗</a><a class="hover:text-white" href="https://leetcode.com/tonyghouse/" target="_blank" rel="noreferrer">LeetCode ↗</a></div></div>
+      </section>
+      <footer class="mx-auto flex max-w-6xl items-center justify-between px-6 py-7 text-xs text-stone-500"><span>© 2026 Tony Ghouse</span><a class="hover:text-rose-600 dark:hover:text-rose-400" href="#top">Back to top ↑</a></footer>
     </main>
   </body>
 </html>
