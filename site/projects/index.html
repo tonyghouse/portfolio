@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Projects by Tony Ghouse." />
+    <meta name="description" content="Selected products and developer tools built by Tony Ghouse." />
     <meta name="theme-color" content="#f7f5f2" />
     <title>Projects — Tony Ghouse</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -58,13 +58,112 @@
       </div>
     </header>
 
-    <main class="relative grid min-h-[calc(100svh-128px)] place-items-center overflow-hidden px-6 py-24 text-center sm:min-h-[calc(100svh-80px)]">
-      <div class="hero-grid absolute inset-0 -z-10" aria-hidden="true"></div>
-      <div>
-        <p class="mb-4 font-mono text-xs font-semibold uppercase tracking-[0.24em] text-rose-600 dark:text-rose-400">Tony Ghouse</p>
-        <h1 class="text-5xl font-black tracking-[-0.055em] text-stone-950 sm:text-7xl dark:text-white">Projects<span class="text-rose-600 dark:text-rose-500">.</span></h1>
-        <p class="mt-5 text-stone-500 dark:text-stone-400">Project details are coming soon.</p>
-      </div>
+    <main class="overflow-hidden">
+      <section class="relative border-b border-stone-200 dark:border-stone-800">
+        <div class="hero-grid absolute inset-0 -z-10" aria-hidden="true"></div>
+        <div class="mx-auto max-w-6xl px-6 py-20 sm:py-28">
+          <p class="mb-4 font-mono text-xs font-semibold uppercase tracking-[0.24em] text-rose-600 dark:text-rose-400">Selected work</p>
+          <h1 class="text-5xl font-black tracking-[-0.055em] text-stone-950 sm:text-7xl dark:text-white">Projects<span class="text-rose-600 dark:text-rose-500">.</span></h1>
+          <p class="mt-6 max-w-2xl text-base leading-8 text-stone-600 sm:text-lg dark:text-stone-300">Products and developer tools built around reliable backend systems, useful workflows, and clean interfaces.</p>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 py-20 sm:py-28" aria-labelledby="featured-projects">
+        <div class="mb-10 flex items-end justify-between gap-6">
+          <div>
+            <p class="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-rose-600 dark:text-rose-400">01 / Featured</p>
+            <h2 id="featured-projects" class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Built to solve real problems</h2>
+          </div>
+          <a class="hidden text-sm font-semibold text-stone-500 transition hover:text-rose-600 sm:block dark:text-stone-400 dark:hover:text-rose-400" href="https://github.com/tonyghouse?tab=repositories" target="_blank" rel="noreferrer">All GitHub repositories ↗</a>
+        </div>
+
+        <div class="space-y-10">
+          <article class="grid overflow-hidden rounded-3xl border border-stone-200 bg-white/70 shadow-[0_24px_70px_-48px_rgba(28,25,23,0.6)] lg:grid-cols-[1.2fr_0.8fr] dark:border-stone-800 dark:bg-stone-900/60">
+            <a class="group relative min-h-64 overflow-hidden bg-stone-100 lg:min-h-[28rem] dark:bg-stone-900" href="https://socialraven.tonyghouse.com" target="_blank" rel="noreferrer" aria-label="Open the Social Raven website">
+              <img class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.015] dark:hidden" src="/assets/images/projects/socialraven-banner-light.png" alt="Social Raven sign-up interface" />
+              <img class="hidden h-full w-full object-cover transition duration-500 group-hover:scale-[1.015] dark:block" src="/assets/images/projects/socialraven-banner-dark.png" alt="Social Raven sign-up interface in dark mode" />
+            </a>
+            <div class="flex flex-col justify-center p-7 sm:p-10">
+              <p class="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-rose-600 dark:text-rose-400">Featured project</p>
+              <h3 class="mt-3 text-3xl font-bold tracking-tight">Social Raven</h3>
+              <p class="mt-2 text-sm font-medium text-stone-500 dark:text-stone-400">Social media management tool</p>
+              <p class="mt-6 leading-7 text-stone-600 dark:text-stone-300">A social media management product for scheduling posts and analyzing traffic across social accounts.</p>
+              <ul class="mt-7 flex flex-wrap gap-2 font-mono text-[0.7rem] uppercase tracking-wide text-stone-600 dark:text-stone-300" aria-label="Social Raven technologies">
+                <li class="rounded-full border border-stone-300 px-3 py-1.5 dark:border-stone-700">Spring Boot</li>
+                <li class="rounded-full border border-stone-300 px-3 py-1.5 dark:border-stone-700">React / Next.js</li>
+                <li class="rounded-full border border-stone-300 px-3 py-1.5 dark:border-stone-700">Postgres</li>
+                <li class="rounded-full border border-stone-300 px-3 py-1.5 dark:border-stone-700">Kafka</li>
+                <li class="rounded-full border border-stone-300 px-3 py-1.5 dark:border-stone-700">Redis</li>
+              </ul>
+              <div class="mt-8 flex flex-wrap gap-3">
+                <a class="rounded-full bg-stone-950 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-rose-600 dark:bg-stone-100 dark:text-stone-950 dark:hover:bg-rose-500 dark:hover:text-white" href="https://socialraven.tonyghouse.com" target="_blank" rel="noreferrer">Live site ↗</a>
+                <a class="rounded-full border border-stone-300 px-4 py-2.5 text-sm font-semibold transition hover:border-rose-500 hover:text-rose-600 dark:border-stone-700 dark:hover:text-rose-400" href="https://github.com/tonyghouse/socialraven-ui" target="_blank" rel="noreferrer">Source code ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="grid overflow-hidden rounded-3xl border border-stone-200 bg-white/70 shadow-[0_24px_70px_-48px_rgba(28,25,23,0.6)] lg:grid-cols-[0.8fr_1.2fr] dark:border-stone-800 dark:bg-stone-900/60">
+            <div class="flex flex-col justify-center p-7 sm:p-10 lg:order-1">
+              <p class="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-rose-600 dark:text-rose-400">Featured project</p>
+              <h3 class="mt-3 text-3xl font-bold tracking-tight">Mailzard</h3>
+              <p class="mt-2 text-sm font-medium text-stone-500 dark:text-stone-400">Marketing and transactional email, simplified</p>
+              <p class="mt-6 leading-7 text-stone-600 dark:text-stone-300">An email automation platform for creating campaigns and templates, scheduling sends, managing subscribers, and tracking analytics.</p>
+              <ul class="mt-7 flex flex-wrap gap-2 font-mono text-[0.7rem] uppercase tracking-wide text-stone-600 dark:text-stone-300" aria-label="Mailzard technologies">
+                <li class="rounded-full border border-stone-300 px-3 py-1.5 dark:border-stone-700">Spring Boot</li>
+                <li class="rounded-full border border-stone-300 px-3 py-1.5 dark:border-stone-700">React / Next.js</li>
+                <li class="rounded-full border border-stone-300 px-3 py-1.5 dark:border-stone-700">Postgres</li>
+              </ul>
+              <div class="mt-8 flex flex-wrap gap-3">
+                <a class="rounded-full bg-stone-950 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-rose-600 dark:bg-stone-100 dark:text-stone-950 dark:hover:bg-rose-500 dark:hover:text-white" href="https://mailzard.tonyghouse.com" target="_blank" rel="noreferrer">Live site ↗</a>
+                <a class="rounded-full border border-stone-300 px-4 py-2.5 text-sm font-semibold transition hover:border-rose-500 hover:text-rose-600 dark:border-stone-700 dark:hover:text-rose-400" href="https://github.com/tonyghouse/mailzard-ui" target="_blank" rel="noreferrer">Source code ↗</a>
+              </div>
+            </div>
+            <a class="group relative min-h-64 overflow-hidden bg-stone-100 lg:order-2 lg:min-h-[28rem] dark:bg-stone-900" href="https://mailzard.tonyghouse.com" target="_blank" rel="noreferrer" aria-label="Open the Mailzard website">
+              <img class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.015]" src="/assets/images/projects/blank-banner-light.png" alt="Abstract project banner" />
+              <span class="absolute inset-0 grid place-items-center bg-stone-950/5 text-4xl font-black tracking-[-0.05em] text-stone-900 dark:bg-stone-950/35 dark:text-white">Mailzard<span class="text-rose-600">.</span></span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="border-y border-stone-200 bg-white/40 dark:border-stone-800 dark:bg-stone-900/30">
+        <div class="mx-auto max-w-6xl px-6 py-20 sm:py-28">
+          <div class="mb-10">
+            <p class="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-rose-600 dark:text-rose-400">02 / More work</p>
+            <h2 class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Other projects</h2>
+          </div>
+
+          <div class="grid gap-5 md:grid-cols-3">
+            <article class="group flex min-h-72 flex-col rounded-2xl border border-stone-200 bg-[#f7f5f2] p-7 transition hover:-translate-y-1 hover:border-rose-300 dark:border-stone-800 dark:bg-stone-950 dark:hover:border-rose-800">
+              <div class="flex items-start justify-between gap-4"><span class="font-mono text-xs text-rose-600 dark:text-rose-400">01</span><div class="flex gap-3 text-xs font-semibold"><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://github.com/tonyghouse/noteknack-extension" target="_blank" rel="noreferrer">Code ↗</a><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://noteknack.tonyghouse.com" target="_blank" rel="noreferrer">Visit ↗</a></div></div>
+              <h3 class="mt-10 text-xl font-bold tracking-tight">NoteKnack</h3>
+              <p class="mt-3 flex-1 text-sm leading-7 text-stone-600 dark:text-stone-300">A browser extension that saves notes for different websites.</p>
+              <p class="mt-7 font-mono text-xs uppercase tracking-wider text-stone-500">JavaScript</p>
+            </article>
+
+            <article class="group flex min-h-72 flex-col rounded-2xl border border-stone-200 bg-[#f7f5f2] p-7 transition hover:-translate-y-1 hover:border-rose-300 dark:border-stone-800 dark:bg-stone-950 dark:hover:border-rose-800">
+              <div class="flex items-start justify-between gap-4"><span class="font-mono text-xs text-rose-600 dark:text-rose-400">02</span><div class="flex gap-3 text-xs font-semibold"><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://github.com/tonyghouse/tern-monitoring-tool-ui" target="_blank" rel="noreferrer">Code ↗</a><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://tern.tonyghouse.com" target="_blank" rel="noreferrer">Visit ↗</a></div></div>
+              <h3 class="mt-10 text-xl font-bold tracking-tight">Tern</h3>
+              <p class="mt-3 flex-1 text-sm leading-7 text-stone-600 dark:text-stone-300">A monitoring tool for observing applications across environments.</p>
+              <p class="mt-7 font-mono text-xs uppercase leading-5 tracking-wider text-stone-500">Java · Spring · Postgres · Kafka · React / Next.js</p>
+            </article>
+
+            <article class="group flex min-h-72 flex-col rounded-2xl border border-stone-200 bg-[#f7f5f2] p-7 transition hover:-translate-y-1 hover:border-rose-300 dark:border-stone-800 dark:bg-stone-950 dark:hover:border-rose-800">
+              <div class="flex items-start justify-between gap-4"><span class="font-mono text-xs text-rose-600 dark:text-rose-400">03</span><div class="flex gap-3 text-xs font-semibold"><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://github.com/tonyghouse/querycraft-ui" target="_blank" rel="noreferrer">Code ↗</a><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://querycraft.tonyghouse.com" target="_blank" rel="noreferrer">Visit ↗</a></div></div>
+              <h3 class="mt-10 text-xl font-bold tracking-tight">QueryCraft</h3>
+              <p class="mt-3 flex-1 text-sm leading-7 text-stone-600 dark:text-stone-300">A collection of practical database utility tools.</p>
+              <p class="mt-7 font-mono text-xs uppercase tracking-wider text-stone-500">JavaScript · React / Next.js</p>
+            </article>
+          </div>
+
+          <a class="mt-8 inline-flex text-sm font-semibold text-rose-600 hover:text-rose-700 sm:hidden dark:text-rose-400 dark:hover:text-rose-300" href="https://github.com/tonyghouse?tab=repositories" target="_blank" rel="noreferrer">All GitHub repositories ↗</a>
+        </div>
+      </section>
+
+      <footer class="mx-auto flex max-w-6xl items-center justify-between px-6 py-7 text-xs text-stone-500 dark:text-stone-500">
+        <span>© 2026 Tony Ghouse</span>
+        <a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://github.com/tonyghouse" target="_blank" rel="noreferrer">Built by Tony Ghouse ↗</a>
+      </footer>
     </main>
   </body>
 </html>

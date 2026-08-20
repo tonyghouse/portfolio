@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="About Tony Ghouse." />
+    <meta name="description" content="About Tony Ghouse, a backend-focused software developer and open-source contributor." />
     <meta name="theme-color" content="#f7f5f2" />
     <title>About — Tony Ghouse</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
@@ -58,13 +58,74 @@
       </div>
     </header>
 
-    <main class="relative grid min-h-[calc(100svh-128px)] place-items-center overflow-hidden px-6 py-24 text-center sm:min-h-[calc(100svh-80px)]">
-      <div class="hero-grid absolute inset-0 -z-10" aria-hidden="true"></div>
-      <div>
-        <p class="mb-4 font-mono text-xs font-semibold uppercase tracking-[0.24em] text-rose-600 dark:text-rose-400">Tony Ghouse</p>
-        <h1 class="text-5xl font-black tracking-[-0.055em] text-stone-950 sm:text-7xl dark:text-white">About<span class="text-rose-600 dark:text-rose-500">.</span></h1>
-        <p class="mt-5 text-stone-500 dark:text-stone-400">About details are coming soon.</p>
-      </div>
+    <main class="overflow-hidden">
+      <section class="relative border-b border-stone-200 dark:border-stone-800">
+        <div class="hero-grid absolute inset-0 -z-10" aria-hidden="true"></div>
+        <div class="mx-auto grid max-w-6xl items-center gap-12 px-6 py-20 lg:grid-cols-[0.58fr_0.42fr] lg:py-24">
+          <div>
+            <p class="mb-4 font-mono text-xs font-semibold uppercase tracking-[0.24em] text-rose-600 dark:text-rose-400">About me</p>
+            <h1 class="text-5xl font-black tracking-[-0.055em] text-stone-950 sm:text-7xl dark:text-white">Backend-minded<span class="text-rose-600 dark:text-rose-500">.</span></h1>
+            <p class="mt-7 max-w-2xl text-base leading-8 text-stone-600 sm:text-lg dark:text-stone-300">I’m Tony Ghouse, a software developer and computer science graduate specializing in backend development and software built for performance and scalability.</p>
+            <p class="mt-4 max-w-2xl leading-8 text-stone-600 dark:text-stone-300">I enjoy building practical products, deepening my engineering skills, and contributing improvements to open-source software.</p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a class="rounded-full bg-stone-950 px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-rose-600 dark:bg-stone-100 dark:text-stone-950 dark:hover:bg-rose-500 dark:hover:text-white" href="mailto:tonyghouseofficial@gmail.com">Get in touch</a>
+              <a class="rounded-full border border-stone-300 bg-white/60 px-5 py-3 text-sm font-semibold transition hover:-translate-y-0.5 hover:border-rose-400 hover:text-rose-600 dark:border-stone-700 dark:bg-stone-900/70 dark:hover:border-rose-500 dark:hover:text-rose-400" href="/experience/">View experience</a>
+            </div>
+          </div>
+
+          <div class="relative mx-auto w-full max-w-md">
+            <div class="absolute -inset-8 -z-10 rounded-full bg-rose-300/25 blur-3xl dark:bg-rose-800/20" aria-hidden="true"></div>
+            <img class="w-full dark:hidden" src="/assets/images/hero-banner-image-light.png" alt="Developer working at a desk" />
+            <img class="hidden w-full dark:block" src="/assets/images/hero-banner-image-dark.png" alt="Developer working at a desk in dark mode" />
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 py-20 sm:py-28" aria-labelledby="skills">
+        <div class="grid gap-12 lg:grid-cols-[0.32fr_0.68fr] lg:gap-20">
+          <div>
+            <p class="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-rose-600 dark:text-rose-400">01 / Toolkit</p>
+            <h2 id="skills" class="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">Skills</h2>
+            <p class="mt-5 leading-7 text-stone-600 dark:text-stone-300">The technologies I use to build, ship, and operate software.</p>
+          </div>
+
+          <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4" aria-label="Technology skills">
+            <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 dark:border-stone-800 dark:bg-stone-900/60"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/java.svg" alt="" /><span class="font-mono text-sm">Java</span></li>
+            <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 dark:border-stone-800 dark:bg-stone-900/60"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/javascript.svg" alt="" /><span class="font-mono text-sm">JavaScript</span></li>
+            <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 dark:border-stone-800 dark:bg-stone-900/60"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/spring.svg" alt="" /><span class="font-mono text-sm">Spring</span></li>
+            <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 dark:border-stone-800 dark:bg-stone-900/60"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/reactjs.svg" alt="" /><span class="font-mono text-sm">React</span></li>
+            <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 dark:border-stone-800 dark:bg-stone-900/60"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/postgresql.svg" alt="" /><span class="font-mono text-sm">Postgres</span></li>
+            <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 dark:border-stone-800 dark:bg-stone-900/60"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/mongodb.svg" alt="" /><span class="font-mono text-sm">MongoDB</span></li>
+            <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 dark:border-stone-800 dark:bg-stone-900/60"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/redis.svg" alt="" /><span class="font-mono text-sm">Redis</span></li>
+            <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 dark:border-stone-800 dark:bg-stone-900/60"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/kafka.svg" alt="" /><span class="font-mono text-sm">Kafka</span></li>
+            <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 dark:border-stone-800 dark:bg-stone-900/60"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/graphql.svg" alt="" /><span class="font-mono text-sm">GraphQL</span></li>
+            <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 dark:border-stone-800 dark:bg-stone-900/60"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/meilisearch.svg" alt="" /><span class="font-mono text-sm">Meilisearch</span></li>
+            <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 dark:border-stone-800 dark:bg-stone-900/60"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/docker.svg" alt="" /><span class="font-mono text-sm">Docker</span></li>
+            <li class="group flex items-center gap-3 rounded-2xl border border-stone-200 bg-white/60 p-4 dark:border-stone-800 dark:bg-stone-900/60"><img class="h-8 w-8 grayscale transition group-hover:grayscale-0" src="/assets/icons/svg/kubernetes.svg" alt="" /><span class="font-mono text-sm">Kubernetes</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="border-y border-stone-200 bg-white/40 dark:border-stone-800 dark:bg-stone-900/30" aria-labelledby="contact">
+        <div class="mx-auto max-w-6xl px-6 py-20 sm:py-24">
+          <p class="font-mono text-xs font-semibold uppercase tracking-[0.2em] text-rose-600 dark:text-rose-400">02 / Connect</p>
+          <div class="mt-3 flex flex-col justify-between gap-8 sm:flex-row sm:items-end">
+            <div><h2 id="contact" class="text-3xl font-bold tracking-tight sm:text-4xl">Find me online</h2><p class="mt-4 max-w-2xl leading-7 text-stone-600 dark:text-stone-300">Code, writing, problem solving, or a straightforward email.</p></div>
+            <ul class="flex flex-wrap gap-x-5 gap-y-3 text-sm font-semibold">
+              <li><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://github.com/tonyghouse" target="_blank" rel="noreferrer">GitHub ↗</a></li>
+              <li><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://www.linkedin.com/in/tonyghouse/" target="_blank" rel="noreferrer">LinkedIn ↗</a></li>
+              <li><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://twitter.com/tonyghouse" target="_blank" rel="noreferrer">Twitter ↗</a></li>
+              <li><a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://leetcode.com/tonyghouse/" target="_blank" rel="noreferrer">LeetCode ↗</a></li>
+              <li><a class="hover:text-rose-600 dark:hover:text-rose-400" href="mailto:tonyghouseofficial@gmail.com">Email ↗</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <footer class="mx-auto flex max-w-6xl items-center justify-between px-6 py-7 text-xs text-stone-500 dark:text-stone-500">
+        <span>© 2026 Tony Ghouse</span>
+        <a class="hover:text-rose-600 dark:hover:text-rose-400" href="https://github.com/tonyghouse" target="_blank" rel="noreferrer">Built by Tony Ghouse ↗</a>
+      </footer>
     </main>
   </body>
 </html>
